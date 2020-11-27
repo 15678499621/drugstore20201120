@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+.bigbox {
+  background-color: whitesmoke;
+}
+.bigbox .header {
+  background-color: #fff;
+  height: 80px;
+  overflow: hidden;
+}
+.bigbox .header .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .header .main .logo {
+  width: 104px;
+  height: 54px;
+  float: left;
+  margin-top: 8px;
+}
+.bigbox .header .main ul {
+  width: 526px;
+  line-height: 80px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bigbox .header .main ul li {
+  width: 101px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bigbox .header .main ul li img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+}
+.bigbox .header .main ul li span {
+  font-size: 16px;
+  line-height: 80px;
+}
+.bigbox .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .main .registered-box {
+  width: 950px;
+  height: 594px;
+  background-color: papayawhip;
+  margin: 30px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bigbox .main .registered-box .registered-top h3 {
+  height: 64px;
+  line-height: 24px;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #999;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+}
+.bigbox .main .registered-box .registered-top h3 .welcome {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-left: 24px;
+}
+.bigbox .main .registered-box .registered-top h3 .already {
+  font-size: 12px;
+  color: #999;
+  font-weight: 400;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  float: right;
+}
+.bigbox .main .registered-box .registered-bottom {
+  width: 100%;
+  height: 530px;
+  background-color: pink;
+  overflow: hidden;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid {
+  width: 300px;
+  background-color: powderblue;
+  margin-top: 30px;
+  margin-left: 244px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-box {
+  width: 470px;
+  height: 70px;
+  background-color: rosybrown;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-box p:nth-child(1) {
+  width: 470px;
+  height: 46px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-box p:nth-child(1) i {
+  width: 80px;
+  height: 44px;
+  font-style: normal;
+  display: block;
+  background-color: seashell;
+  float: left;
+  line-height: 44px;
+  letter-spacing: 3px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-box p:nth-child(1) .user {
+  width: 378px;
+  height: 44px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-box p:nth-child(2) {
+  color: red;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha {
+  width: 470px;
+  height: 70px;
+  background-color: sandybrown;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha p:nth-child(1) {
+  width: 470px;
+  height: 46px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  position: relative;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha p:nth-child(1) i {
+  width: 80px;
+  height: 44px;
+  font-style: normal;
+  display: block;
+  background-color: seashell;
+  float: left;
+  line-height: 44px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha p:nth-child(1) .yzm {
+  width: 308px;
+  height: 44px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha p:nth-child(1) span {
+  display: block;
+  width: 65px;
+  height: 40px;
+  background-color: #a7adb1;
+  float: left;
+  line-height: 36px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha p:nth-child(1) b {
+  display: block;
+  position: absolute;
+  left: 310px;
+  top: 46px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ececec;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .Captcha p:nth-child(2) {
+  color: red;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code {
+  width: 470px;
+  height: 68px;
+  background-color: yellow;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-left {
+  width: 340px;
+  height: 46px;
+  background-color: whitesmoke;
+  float: left;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-left p:nth-child(1) {
+  width: 340px;
+  height: 46px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  position: relative;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-left p:nth-child(1) i {
+  width: 80px;
+  height: 44px;
+  font-style: normal;
+  display: block;
+  background-color: seashell;
+  float: left;
+  line-height: 44px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-left p:nth-child(1) .code {
+  width: 248px;
+  height: 44px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-left p:nth-child(2) {
+  color: red;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-right {
+  width: 100px;
+  height: 46px;
+  float: right;
+  background-color: #1d6fb8;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .phone-code .phone-code-right span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 46px;
+  text-align: center;
+  color: white;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .login-code {
+  width: 470px;
+  height: 70px;
+  background-color: rosybrown;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .login-code p:nth-child(1) {
+  width: 470px;
+  height: 46px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .login-code p:nth-child(1) i {
+  width: 80px;
+  height: 44px;
+  font-style: normal;
+  display: block;
+  background-color: seashell;
+  float: left;
+  line-height: 44px;
+  letter-spacing: 3px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .login-code p:nth-child(1) .pass {
+  width: 378px;
+  height: 44px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .login-code p:nth-child(2) {
+  color: red;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .confirm-password {
+  width: 470px;
+  height: 70px;
+  background-color: skyblue;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .confirm-password p:nth-child(1) {
+  width: 470px;
+  height: 46px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .confirm-password p:nth-child(1) i {
+  width: 80px;
+  height: 44px;
+  font-style: normal;
+  display: block;
+  background-color: seashell;
+  float: left;
+  line-height: 44px;
+  letter-spacing: 3px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .confirm-password p:nth-child(1) .qr {
+  width: 378px;
+  height: 44px;
+  float: left;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.bigbox .main .registered-box .registered-bottom .registered-bottom-mid .confirm-password p:nth-child(2) {
+  color: red;
+}
+.bigbox .main .registered-box .registered-bottom .service {
+  width: 470px;
+  height: 18px;
+  background-color: springgreen;
+  margin-left: 244px;
+}
+.bigbox .main .registered-box .registered-bottom .service #tong {
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  float: left;
+}
+.bigbox .main .registered-box .registered-bottom .service p {
+  font-size: 12px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+.bigbox .main .registered-box .registered-bottom .service p i {
+  font-style: normal;
+}
+.bigbox .main .registered-box .registered-bottom .registered-btn {
+  width: 470px;
+  height: 40px;
+  background-color: #cccccc;
+  margin-left: 244px;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=zhuce.css.map */

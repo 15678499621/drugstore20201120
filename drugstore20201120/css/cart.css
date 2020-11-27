@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body,
+html {
+  background-color: #f4f4f4;
+}
+
+.bigbox .HeaderTopContainer {
+  background-color: #faf3e3;
+  height: 30px;
+}
+.bigbox .HeaderTopContainer .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .HeaderTopContainer .main .top {
+  width: 1190px;
+  height: 30px;
+}
+.bigbox .HeaderTopContainer .main .top .header-left {
+  width: 135px;
+  line-height: 30px;
+  float: left;
+}
+.bigbox .HeaderTopContainer .main .top .header-left a {
+  color: #999;
+  font-size: 14px;
+  width: 120px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bigbox .HeaderTopContainer .main .top .consultative {
+  width: 80px;
+  height: 14px;
+  float: left;
+  border-left: 1px solid #999;
+  margin-top: 8px;
+  position: relative;
+  padding-bottom: 8px;
+}
+.bigbox .HeaderTopContainer .main .top .consultative p {
+  font-size: 12px;
+  margin-left: 15px;
+  color: #999;
+}
+.bigbox .HeaderTopContainer .main .top .consultative ul {
+  width: 120px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 20px;
+  display: none;
+  z-index: 30;
+}
+.bigbox .HeaderTopContainer .main .top .consultative ul li {
+  width: 100%;
+  height: 30px;
+}
+.bigbox .HeaderTopContainer .main .top .consultative:hover ul {
+  display: block;
+}
+.bigbox .HeaderTopContainer .main .top .header-right {
+  width: 579px;
+  height: 30px;
+  float: right;
+}
+.bigbox .HeaderTopContainer .main .top .header-right a {
+  height: 30px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 8px;
+}
+.bigbox .HeaderTopContainer .main .top .header-right a:hover {
+  color: #ffc69a;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about {
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  background-color: #fff;
+  left: -207px;
+  display: none;
+  z-index: 30;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about .about-left {
+  width: 140px;
+  height: 200px;
+  float: left;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about .about-left img {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about .about-left p {
+  text-align: center;
+  color: #999;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about .about-right {
+  width: 140px;
+  height: 200px;
+  float: right;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about .about-right img {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus .about .about-right p {
+  text-align: center;
+  color: #999;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus:hover .about {
+  display: block;
+}
+.bigbox .HeaderTopContainer .main .top .header-right .focusus:hover {
+  background-color: #fff;
+}
+.bigbox .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .main .schedule {
+  width: 1190px;
+  height: 120px;
+  background-color: #ffc69a;
+}
+.bigbox .main .schedule .cart-logo-left {
+  width: 361px;
+  height: 120px;
+  background-color: yellow;
+  float: left;
+}
+.bigbox .main .schedule .cart-logo-left a:nth-child(1) {
+  display: block;
+  float: left;
+  margin-top: 25px;
+}
+.bigbox .main .schedule .cart-logo-left a:nth-child(1) img {
+  width: 159px;
+  height: 70px;
+}
+.bigbox .main .schedule .cart-logo-left a:nth-child(2) {
+  display: block;
+  float: right;
+  margin-top: 40px;
+}
+.bigbox .main .schedule .cart-step-right {
+  width: 411px;
+  height: 97px;
+  background-color: yellowgreen;
+  float: right;
+}
+.bigbox .main .cart-title {
+  width: 1190px;
+  height: 44px;
+  background-color: honeydew;
+  margin-top: 20px;
+}
+.bigbox .main .cart-title .cart-info {
+  float: left;
+  font-size: 12px;
+  margin-left: 250px;
+  height: 44px;
+  width: 300px;
+  line-height: 44px;
+}
+.bigbox .main .cart-title .cart-weight {
+  width: 135px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  font-size: 12px;
+}
+.bigbox .main .cart-title .cart-price {
+  width: 125px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  font-size: 12px;
+}
+.bigbox .main .cart-title .cart-quantity {
+  width: 150px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  font-size: 12px;
+}
+.bigbox .main .cart-title .cart-subtotal {
+  width: 135px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  font-size: 12px;
+}
+.bigbox .main .cart-title .cart-operation {
+  width: 24px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  font-size: 12px;
+}
+.bigbox .main .cart-body {
+  width: 1190px;
+  background-color: honeydew;
+  margin-top: 20px;
+}
+.bigbox .main .cart-body .cart-header {
+  width: 1190px;
+  height: 45px;
+  background-color: hotpink;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999;
+}
+.bigbox .main .cart-body .cart-header input {
+  width: 14px;
+  height: 14px;
+  margin-top: 15px;
+  margin-left: 15px;
+  float: left;
+}
+.bigbox .main .cart-body .cart-header .country {
+  display: block;
+  float: left;
+  font-weight: 900;
+  margin-left: 20px;
+  line-height: 45px;
+}
+.bigbox .main .cart-body .cart-header .Mailing-method {
+  display: block;
+  float: left;
+  margin-left: 50px;
+  line-height: 45px;
+}
+.bigbox .main .cart-body .cart-product-row {
+  width: 1190px;
+  border-bottom: 1px dashed #999;
+}
+.bigbox .main .cart-body .cart-product-row ul li {
+  width: 1190px;
+  height: 121px;
+  border-bottom: 1px dashed #999;
+}
+.bigbox .main .cart-body .cart-product-row ul li input {
+  width: 14px;
+  height: 14px;
+  float: left;
+  line-height: 121px;
+  margin-left: 15px;
+  margin-top: 53px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .product-info {
+  width: 450px;
+  height: 80px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .product-info a {
+  display: block;
+  float: left;
+  margin-top: 5px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .product-info a img {
+  width: 70px;
+  height: 70px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .product-info span {
+  display: block;
+  min-height: 40px;
+  max-height: 70px;
+  overflow: hidden;
+  width: 290px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .weight {
+  width: 125px;
+  height: 24px;
+  float: left;
+  margin-top: 49px;
+  margin-left: 18px;
+  text-align: center;
+}
+.bigbox .main .cart-body .cart-product-row ul li .price {
+  width: 145px;
+  height: 32px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 45px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .price p:nth-child(1) {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: line-through;
+  text-align: center;
+}
+.bigbox .main .cart-body .cart-product-row ul li .price p:nth-child(2) {
+  font-size: 12px;
+  text-align: center;
+}
+.bigbox .main .cart-body .cart-product-row ul li .quantity .sub {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.bigbox .main .cart-body .cart-product-row ul li .quantity .txt {
+  width: 40px;
+  height: 19px;
+  text-align: center;
+  float: left;
+}
+.bigbox .main .cart-body .cart-product-row ul li .quantity .add {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.bigbox .main .cart-body .cart-product-row ul li .subtotal {
+  width: 100px;
+  height: 16px;
+  float: left;
+  margin-top: 56px;
+  margin-left: 3px;
+}
+.bigbox .main .cart-body .cart-product-row ul li .subtotal p {
+  font-size: 12px;
+  text-align: center;
+}
+.bigbox .main .cart-body .cart-product-row ul li .operation {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  float: left;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.bigbox .main .cart-body .cart-foot {
+  width: 1190px;
+  height: 45px;
+  background-color: #ffc69a;
+}
+
+/*# sourceMappingURL=cart.css.map */

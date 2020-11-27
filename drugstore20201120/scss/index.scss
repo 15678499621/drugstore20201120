@@ -1,0 +1,1491 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body,
+html {
+    background-color: rgb(244, 244, 244);
+}
+
+@mixin heart {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.bigbox {
+    .HeaderTopContainer {
+        background-color: rgb(250, 243, 227);
+        height: 30px;
+
+        .main {
+            @include heart;
+
+            .top {
+                width: 1190px;
+                height: 30px;
+
+                .header-left {
+                    width: 135px;
+                    line-height: 30px;
+                    float: left;
+
+                    a {
+                        color: #999;
+                        font-size: 14px;
+                        width: 120px;
+                        line-height: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                    }
+                }
+
+                .consultative {
+                    width: 80px;
+                    height: 14px;
+                    float: left;
+                    border-left: 1px solid #999;
+                    margin-top: 8px;
+                    position: relative;
+                    padding-bottom: 8px;
+
+                    p {
+                        font-size: 12px;
+                        margin-left: 15px;
+                        color: #999;
+                    }
+
+                    ul {
+                        width: 120px;
+                        background-color: aliceblue;
+                        position: absolute;
+                        top: 20px;
+                        display: none;
+                        z-index: 30;
+
+                        li {
+                            width: 100%;
+                            height: 30px;
+
+                        }
+                    }
+
+                    &:hover ul {
+                        display: block;
+                    }
+
+                }
+
+                .header-right {
+                    width: 579px;
+                    height: 30px;
+                    float: right;
+
+                    a {
+                        height: 30px;
+                        color: #ccc;
+                        font-size: 16px;
+                        line-height: 30px;
+                        padding-left: 8px;
+
+                        &:hover {
+                            color: rgb(255, 198, 154);
+                        }
+
+                    }
+
+                    .focusus {
+                        position: relative;
+                        height: 30px;
+                        display: inline-block;
+
+                        .about {
+
+                            position: absolute;
+                            width: 280px;
+                            height: 200px;
+                            background-color: #fff;
+                            //  display: flex;
+                            //  justify-content: space-between;
+                            //  align-items: center;
+                            left: -207px;
+                            display: none;
+                            z-index: 30;
+
+                            .about-left {
+                                width: 140px;
+                                height: 200px;
+                                //  background-color: palevioletred;
+                                float: left;
+
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                    margin-top: 30px;
+                                    margin-left: 20px;
+                                }
+
+                                p {
+                                    text-align: center;
+                                    color: #999;
+                                }
+                            }
+
+                            .about-right {
+                                width: 140px;
+                                height: 200px;
+                                // background-color: yellow;
+                                float: right;
+
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                    margin-top: 30px;
+                                    margin-left: 20px;
+                                }
+
+                                p {
+                                    text-align: center;
+                                    color: #999;
+                                }
+
+                            }
+                        }
+
+                        &:hover .about {
+                            display: block;
+                        }
+
+                        &:hover {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .HeaderMiddle {
+        background-color: rgb(255, 228, 191);
+        height: 116px;
+        // overflow: hidden;
+
+        .main {
+            @include heart;
+
+            a {
+                // display: inline-block;
+                margin-top: 25px;
+                float: left;
+            }
+
+            .HeaderLogoDesc {
+                width: 246px;
+                height: 50px;
+                float: left;
+                border-left: 2px solid #999;
+                padding-left: 30px;
+                margin-top: 35px;
+                margin-left: 20px;
+
+            }
+
+            //  搜索框部分 
+            .search_grid {
+                width: 560px;
+                height: 81px;
+                // background-color: whitesmoke;
+                float: left;
+                margin-left: 10px;
+                margin-top: 30px;
+                // overflow: hidden;
+
+                .search_box {
+                    width: 556;
+                    height: 39px;
+                    border: 2px solid rgb(29, 111, 184);
+                    // background-color: yellowgreen;
+
+                    div {
+                        width: 30px;
+                        height: 39px;
+                        float: left;
+                        background-color:#fff;
+                        text-align: center;
+
+                        i {
+                            font-size: 16px;
+                            line-height: 39px;
+                        }
+                    }
+
+                    input {
+                        width: 400px;
+                        height: 21px;
+                        padding: 9px 0px 9px 5px;
+                        border: 0px;
+                        outline: none;
+                        float: left;
+                    }
+
+                    button {
+                        width: 121px;
+                        height: 39px;
+                        border: 0px;
+                        outline: none;
+                        float: left;
+                        background-color: rgb(29, 111, 184);
+                    }
+                }
+
+                .hot-search {
+
+                    width: 560px;
+                    height: 21px;
+                    // background-color: red;
+                    margin-top: 5px;
+
+                    .hot-search-box {
+                        float: left;
+                        width: 560px;
+                        height: 21px;
+
+                        .hot {
+                            color: rgb(240, 212, 174);
+                            border: none;
+                        }
+
+                        div {
+                            float: left;
+                            color: rgb(186, 151, 102);
+                            margin-left: 20px;
+                            border-left: 1px solid rgb(186, 151, 102);
+
+                            p {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cart {
+                display: block;
+                width: 120px;
+                height: 40px;
+                border-radius: 7px;
+                background-color: rgb(29, 111, 184);
+                float: right;
+                margin-top: 30px;
+
+                .cart-img {
+                    float: left;
+                    line-height: 40px;
+                    font-size: 26px;
+                    color: rgb(250, 243, 227);
+                    margin-left: 8px;
+                }
+
+                span {
+                    color: rgb(250, 243, 227);
+                    line-height: 40px;
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    // 导航部分
+    .nav {
+        height: 40px;
+        background-color: rgb(29, 111, 184);
+
+        .main {
+            @include heart;
+
+            .new-online {
+                position: relative;
+                height: 40px;
+                width: 880px;
+
+                .new-list {
+                    width: 100%;
+                    height: 100%;
+
+                    li {
+                        width: 80px;
+                        line-height: 40px;
+                        float: left;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            line-height: 40px;
+                            color: whitesmoke;
+                            font-size: 16px;
+                            text-align: center;
+
+                            &:hover {
+                                background-color: rgb(13, 80, 139);
+                            }
+                        }
+                    }
+                }
+
+                //   显示模块
+                .show {
+                    width: 1190px;
+                    min-height: 343px;
+                    background-color: pink;
+                    display: none;
+
+                    .show-left {
+                        width: 880px;
+                        min-height: 343px;
+                        background-color: rgb(186, 151, 102);
+                        float: left;
+
+                        .show-left-title {
+                            width: 880px;
+                            height: 35px;
+                            float: left;
+                            margin-top: 10px;
+
+                            h3 {
+                                margin-left: 20px;
+                                width: 80px;
+                                min-height: 35px;
+                                background-color: aqua;
+                                font-size: 15px;
+                                float: left;
+                                line-height: 35px;
+
+                            }
+
+                            ul {
+                                float: left;
+                                width: 780px;
+                                min-height: 35px;
+
+                                li {
+                                    float: left;
+                                    min-width: 60px;
+                                    line-height: 35px;
+
+                                    a {
+                                        color: black;
+
+                                        &:hover {
+                                            color: rgb(255, 153, 51);
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    // 右边图片
+                    .show-right {
+                        width: 310px;
+                        min-height: 343px;
+                        background-color: azure;
+                        float: left;
+
+                        h3 {
+                            text-align: center;
+                            margin-top: 15px;
+                        }
+
+                        .img-list {
+                            width: 280px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+
+                            li {
+                                float: left;
+                                width: 130px;
+                                height: 50px;
+                                margin-left: 10px;
+                                margin-top: 20px;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    //主体内容部分
+    .main-container {
+        background-color: #ccc;
+
+        .main {
+            @include heart;
+
+            // 轮播图
+            .carousel {
+                width: 1190px;
+                height: 380px;
+                margin-top: 20px;
+                background-color: rgb(240, 212, 174);
+
+                .carousel-left {
+                    width: 910px;
+                    height: 100%;
+                    background-color: azure;
+                    float: left;
+
+                    .bigbox-container {
+                        width: 910px;
+                        height: 380px;
+
+                        .swiper-container {
+                            width: 910px;
+                            height: 380px;
+
+                            &:hover .swiper-button-prev {
+                                display: block;
+                            }
+
+                            &:hover .swiper-button-next {
+                                display: block;
+                            }
+
+                            .swiper-button-prev {
+                                display: none;
+                                width: 30px;
+                                height: 45px;
+                                background-color: rgb(226, 209, 208, 0.5);
+                            }
+
+                            .swiper-button-next {
+                                width: 30px;
+                                height: 45px;
+                                background-color: rgb(226, 209, 208, 0.5);
+                                display: none;
+                            }
+
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .carousel-right {
+                    float: right;
+                    width: 270px;
+                    height: 380px;
+                    background-color: skyblue;
+
+                    .FastReport {
+                        width: 270px;
+                        height: 380px;
+                        background-color: khaki;
+                        overflow: hidden;
+
+                        h3 {
+                            margin-top: 10px;
+                            margin-left: 10px;
+
+                        }
+
+                        a {
+                            display: block;
+                            line-height: 22px;
+                            margin-top: 5px;
+                            margin-left: 10px;
+                            color: #999;
+
+                            &:hover {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            // 新品上线top
+            .New-product {
+                width: 1190px;
+                height: 354px;
+                background-color: blanchedalmond;
+                margin-top: 25px;
+                border-top: 2px solid black;
+
+                .New-product-ok {
+                    width: 100%;
+                    height: 100%;
+
+                    .New-product-title {
+                        width: 100%;
+                        height: 53px;
+                        background-color: #fff;
+
+                        h2 {
+                            line-height: 53px;
+                            margin-left: 20px;
+                            float: left;
+
+                        }
+
+                        a {
+                            display: block;
+                            float: right;
+                            line-height: 53px;
+                            padding-right: 15px;
+                        }
+                    }
+
+                    .New-product-shopping {
+                        width: 100%;
+                        height: 301px;
+                        background-color: whitesmoke;
+
+                        .shopping-list {
+                            height: 301px;
+                            width: 100%;
+
+                            .shopping-container {
+                                height: 301px;
+                                width: 1190px;
+                                overflow: hidden;
+                                position: relative;
+
+                                .shopping-main {
+                                    height: 301px;
+                                    width: 6000px;
+                                    position: absolute;
+                                    left: 0;
+
+                                    ul {
+                                        height: 301px;
+                                        width: 6000px;
+
+                                        li {
+                                            height: 301px;
+                                            width: 238px;
+                                            float: left;
+                                            position: relative;
+                                            border-left: 1px solid #999;
+                                            border-top: 1px solid #999;
+                                            background-color: #fff;
+
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100;
+
+                                                .jp-top {
+                                                    height: 205px;
+                                                    width: 230px;
+                                                    margin: 0 auto;
+                                                    border-radius: 10px;
+
+                                                    .p1 {
+                                                        height: 150px;
+                                                        width: 150px;
+                                                        margin: 40px auto 15px;
+
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                        }
+                                                    }
+
+                                                    .p2 {
+                                                        // background: #ec2626;
+                                                        color: #777;
+                                                        font-size: 14px;
+                                                        text-align: center;
+                                                        height: 36px;
+                                                        margin-bottom: 0;
+                                                        width: 220px;
+                                                        overflow: hidden;
+                                                        text-align: justify;
+
+                                                    }
+
+
+                                                }
+
+                                                .shopping-price {
+                                                    width: 120px;
+                                                    height: 42px;
+                                                    background-color: #fff;
+                                                    float: left;
+                                                    margin-left: 5px;
+                                                    margin-top: 5px;
+
+                                                    .new_price {
+                                                        font-size: 20px;
+                                                        color: black;
+                                                    }
+
+                                                    .old_price {
+                                                        font-size: 14px;
+                                                        color: #ccc;
+                                                        text-decoration: line-through;
+                                                    }
+
+                                                }
+
+                                                button {
+                                                    width: 60px;
+                                                    height: 40px;
+                                                    background-color: rgb(255, 153, 51);
+                                                    outline: none;
+                                                    border: none;
+                                                    float: left;
+                                                    margin-left: 38px;
+                                                    margin-top: 5px;
+
+                                                    i {
+                                                        color: whitesmoke;
+                                                        font-size: 25px;
+                                                    }
+                                                }
+
+
+                                            }
+                                        }
+
+                                        li:nth-child(1) {
+                                            border-left: none;
+                                        }
+
+                                        li:nth-child(6) {
+                                            border-left: none;
+                                        }
+
+                                    }
+
+                                }
+
+                                .shopping-pre {
+                                    width: 36px;
+                                    height: 72px;
+                                    display: block;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 100px;
+                                    background: #777;
+                                    opacity: 0.6;
+                                    left: 0;
+                                    font-size: 50px;
+                                }
+
+                                .shopping-next {
+                                    width: 36px;
+                                    height: 72px;
+                                    display: block;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 100px;
+                                    background: #777;
+                                    opacity: 0.6;
+                                    right: 0;
+                                    font-size: 50px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+           // 新品上线bottom
+
+            //  畅销推荐top
+            .recommend {
+                width: 1190px;
+                height: 674px;
+                border-top: 2px solid #000;
+                background-color: yellow;
+                margin-top: 20px;
+
+                .recommend-top {
+                    width: 100%;
+                    height: 53px;
+                    background-color: #fff;
+
+                    h2 {
+                        line-height: 53px;
+                        margin-left: 20px;
+                        float: left;
+                    }
+
+                    a {
+                        display: block;
+                        float: right;
+                        margin-right: 20px;
+                        line-height: 53px;
+                    }
+                }
+
+                .recommend-bottom {
+                    width: 100%;
+                    height: 621px;
+                    background-color: orange;
+
+                    .CatalogImg {
+                        float: left;
+
+                        a {
+                            display: block;
+                            width: 475px;
+                            height: 300px;
+
+                            img {
+                                width: 100%;
+                                height: 104%;
+                                line-height: 0;
+                                font-size: 0;
+                            }
+                        }
+                    }
+
+                    .online-goods {
+                        width: 238px;
+                        height: 310px;
+                        background-color: #fff;
+                        float: left;
+                        border-top: 1px solid #999;
+                        border-left: 1px solid #999;
+                        box-sizing: border-box;
+
+                        img {
+                            width: 190px;
+                            height: 194px;
+                            margin-left: 24px;
+                            margin-top: 10px;
+
+                        }
+
+                        h3 {
+                            width: 207px;
+                            height: 32px;
+                            margin-top: 5px;
+                            margin-left: 15px;
+                            font-size: 12px;
+                            text-align: justify;
+                            overflow: hidden;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            margin-left: 5px;
+                            margin-top: 20px;
+                            font-weight: 900;
+                            float: left;
+                        }
+
+                        .online-btn {
+                            width: 36px;
+                            height: 40px;
+                            background-color: rgb(255, 153, 51);
+                            float: right;
+                            margin-top: 10px;
+                            margin-right: 10px;
+                            padding-left: 12px;
+                            padding-right: 12px;
+
+                            i {
+                                font-size: 30px;
+                                color: whitesmoke;
+                                text-align: center;
+                            }
+                        }
+
+                    }
+
+
+
+
+                }
+
+            }
+            //  畅销推荐bottom
+
+            //网红同款top
+            .New-product1 {
+                width: 1190px;
+                height: 354px;
+                background-color: blanchedalmond;
+                margin-top: 25px;
+                border-top: 2px solid black;
+
+                .New-product-ok1 {
+                    width: 100%;
+                    height: 100%;
+
+                    .New-product-title1 {
+                        width: 100%;
+                        height: 53px;
+                        background-color: #fff;
+
+                        h2 {
+                            line-height: 53px;
+                            margin-left: 20px;
+                            float: left;
+
+                        }
+
+                        a {
+                            display: block;
+                            float: right;
+                            line-height: 53px;
+                            padding-right: 15px;
+                        }
+                    }
+
+                    .New-product-shopping1 {
+                        width: 100%;
+                        height: 301px;
+                        background-color: whitesmoke;
+
+                        .shopping-list1 {
+                            height: 301px;
+                            width: 100%;
+
+                            .shopping-container1 {
+                                height: 301px;
+                                width: 1190px;
+                                overflow: hidden;
+                                position: relative;
+
+                                .shopping-main1 {
+                                    height: 301px;
+                                    width: 6000px;
+                                    position: absolute;
+                                    left: 0;
+
+                                    ul {
+                                        height: 301px;
+                                        width: 6000px;
+
+                                        li {
+                                            height: 301px;
+                                            width: 238px;
+                                            float: left;
+                                            position: relative;
+                                            border-left: 1px solid #999;
+                                            border-top: 1px solid #999;
+                                            background-color: #fff;
+
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100;
+
+                                                .jp-top1 {
+                                                    height: 205px;
+                                                    width: 230px;
+                                                    margin: 0 auto;
+                                                    border-radius: 10px;
+
+                                                    .p11 {
+                                                        height: 150px;
+                                                        width: 150px;
+                                                        margin: 40px auto 15px;
+
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                        }
+                                                    }
+
+                                                    .p21 {
+                                                        background: #fff;
+                                                        color: #777;
+                                                        font-size: 14px;
+                                                        text-align: center;
+                                                        height: 36px;
+                                                        margin-bottom: 0;
+                                                        width: 220px;
+                                                        overflow: hidden;
+                                                        text-align: justify;
+
+                                                    }
+
+
+                                                }
+
+                                                .shopping-price1 {
+                                                    width: 120px;
+                                                    height: 42px;
+                                                    // background-color: cornsilk;
+                                                    float: left;
+                                                    margin-left: 5px;
+                                                    margin-top: 5px;
+
+                                                    .new_price1 {
+                                                        font-size: 20px;
+                                                        color: black;
+                                                    }
+
+                                                    .old_price1 {
+                                                        font-size: 14px;
+                                                        color: #ccc;
+                                                        text-decoration: line-through;
+                                                    }
+
+                                                }
+
+                                                button {
+                                                    width: 60px;
+                                                    height: 40px;
+                                                    background-color: rgb(255, 153, 51);
+                                                    outline: none;
+                                                    border: none;
+                                                    float: left;
+                                                    margin-left: 38px;
+                                                    margin-top: 5px;
+
+                                                    i {
+                                                        color: whitesmoke;
+                                                        font-size: 25px;
+                                                    }
+                                                }
+
+
+                                            }
+                                        }
+
+                                        li:nth-child(1) {
+                                            border-left: none;
+                                        }
+
+                                        li:nth-child(6) {
+                                            border-left: none;
+                                        }
+
+                                    }
+
+                                }
+
+                                .shopping-pre1 {
+                                    width: 36px;
+                                    height: 72px;
+                                    display: block;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 100px;
+                                    background: #777;
+                                    opacity: 0.6;
+                                    left: 0;
+                                    font-size: 50px;
+                                }
+
+                                .shopping-next1 {
+                                    width: 36px;
+                                    height: 72px;
+                                    display: block;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 100px;
+                                    background: #777;
+                                    opacity: 0.6;
+                                    right: 0;
+                                    font-size: 50px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+            //网红同款bottom
+
+            
+            // 超级特惠  top
+            .New-product2 {
+                width: 1190px;
+                height: 354px;
+                background-color: blanchedalmond;
+                margin-top: 25px;
+                border-top: 2px solid black;
+
+                .New-product-ok2 {
+                    width: 100%;
+                    height: 100%;
+
+                    .New-product-title2 {
+                        width: 100%;
+                        height: 53px;
+                        background-color: #fff;
+
+                        h2 {
+                            line-height: 53px;
+                            margin-left: 20px;
+                            float: left;
+
+                        }
+
+                        a {
+                            display: block;
+                            float: right;
+                            line-height: 53px;
+                            padding-right: 15px;
+                        }
+                    }
+
+                    .New-product-shopping2 {
+                        width: 100%;
+                        height: 301px;
+                        background-color: whitesmoke;
+
+                        .shopping-list2 {
+                            height: 301px;
+                            width: 100%;
+
+                            .shopping-container2 {
+                                height: 301px;
+                                width: 1190px;
+                                overflow: hidden;
+                                position: relative;
+
+                                .shopping-main2 {
+                                    height: 301px;
+                                    width: 6000px;
+                                    position: absolute;
+                                    left: 0;
+
+                                    ul {
+                                        height: 301px;
+                                        width: 6000px;
+
+                                        li {
+                                            height: 301px;
+                                            width: 238px;
+                                            float: left;
+                                            position: relative;
+                                            border-left: 1px solid #999;
+                                            border-top: 1px solid #999;
+                                            background-color: #fff;
+
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100;
+
+                                                .jp-top2 {
+                                                    height: 205px;
+                                                    width: 230px;
+                                                    margin: 0 auto;
+                                                    border-radius: 10px;
+
+                                                    .p12 {
+                                                        height: 150px;
+                                                        width: 150px;
+                                                        margin: 40px auto 15px;
+
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                        }
+                                                    }
+
+                                                    .p22 {
+                                                        background: #ec2626;
+                                                        color: #777;
+                                                        font-size: 14px;
+                                                        text-align: center;
+                                                        height: 36px;
+                                                        margin-bottom: 0;
+                                                        width: 220px;
+                                                        overflow: hidden;
+                                                        text-align: justify;
+
+                                                    }
+
+
+                                                }
+
+                                                .shopping-price2 {
+                                                    width: 120px;
+                                                    height: 42px;
+                                                    background-color: cornsilk;
+                                                    float: left;
+                                                    margin-left: 5px;
+                                                    margin-top: 5px;
+
+                                                    .new_price2 {
+                                                        font-size: 20px;
+                                                        color: black;
+                                                    }
+
+                                                    .old_price2 {
+                                                        font-size: 14px;
+                                                        color: #ccc;
+                                                        text-decoration: line-through;
+                                                    }
+
+                                                }
+
+                                                button {
+                                                    width: 60px;
+                                                    height: 40px;
+                                                    background-color: rgb(255, 153, 51);
+                                                    outline: none;
+                                                    border: none;
+                                                    float: left;
+                                                    margin-left: 38px;
+                                                    margin-top: 5px;
+
+                                                    i {
+                                                        color: whitesmoke;
+                                                        font-size: 25px;
+                                                    }
+                                                }
+
+
+                                            }
+                                        }
+
+                                        li:nth-child(1) {
+                                            border-left: none;
+                                        }
+
+                                        li:nth-child(6) {
+                                            border-left: none;
+                                        }
+
+                                    }
+
+                                }
+
+                                .shopping-pre2 {
+                                    width: 36px;
+                                    height: 72px;
+                                    display: block;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 100px;
+                                    background: #777;
+                                    opacity: 0.6;
+                                    left: 0;
+                                    font-size: 50px;
+                                }
+
+                                .shopping-next2 {
+                                    width: 36px;
+                                    height: 72px;
+                                    display: block;
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 100px;
+                                    background: #777;
+                                    opacity: 0.6;
+                                    right: 0;
+                                    font-size: 50px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+            // 超级特惠  bottom
+
+        //    广告图片 top
+               .banner{
+                   width:1190px ;
+                   height: 110px;
+                   .banner-box{
+                       width: 100%;
+                       height: 100%;
+                       background-color: blanchedalmond;
+                       margin-top: 20px;
+                       display: flex;
+                       justify-content: space-between;
+
+                   }
+
+                   
+               }
+
+        //    广告图片 bottom: ;
+
+        // 上面四块商品内容，start
+        .sort-box{
+            width: 1190px;
+            height:354px;
+            background-color: bisque;
+            margin-top: 20px;
+           .sort-top{
+               width: 100%;
+               height: 52px;
+            //    background-color: chartreuse;
+               .sort-connet{
+                width: 100%;
+                height: 52px;
+                background-color: #ccc;
+                ul{
+                    width: 592px;
+                    height: 52px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li{
+                        width: 147px;
+                        height: 51px;
+                        line-height: 51px;
+                        text-align: center;
+                       
+                       
+                        a{
+                            display: block;
+                            width: 147px;
+                            height: 51px;
+                            border-left: 1px solid #777;
+                            border-top:1px solid #777;
+                            box-sizing: border-box;
+                            &:hover{
+                                // background-color: #ccc;
+                                border-top: 2px solid black;
+                               
+                            }
+                        }
+
+
+                    }
+                    li:nth-child(4) a{
+                        border-right: 1px solid#777;
+
+                    }
+
+                }
+               }
+               
+           }
+
+           .New-product-shopping3 {
+            width: 100%;
+            height: 301px;
+            background-color: whitesmoke;
+
+            .shopping-list3 {
+                height: 301px;
+                width: 100%;
+
+                .shopping-container3 {
+                    height: 301px;
+                    width: 1190px;
+                    overflow: hidden;
+                    position: relative;
+
+                    .shopping-main3 {
+                        height: 301px;
+                        width: 6000px;
+                        position: absolute;
+                        left: 0;
+
+                        ul {
+                            height: 301px;
+                            width: 6000px;
+
+                            li {
+                                height: 301px;
+                                width: 238px;
+                                float: left;
+                                position: relative;
+                                border-left: 1px solid #999;
+                                border-top: 1px solid #999;
+                                background-color: #fff;
+
+                                a {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100;
+
+                                    .jp-top3 {
+                                        height: 205px;
+                                        width: 230px;
+                                        margin: 0 auto;
+                                        border-radius: 10px;
+
+                                        .p13 {
+                                            height: 150px;
+                                            width: 150px;
+                                            margin: 40px auto 15px;
+
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+
+                                        .p23 {
+                                            background: #ec2626;
+                                            color: #777;
+                                            font-size: 14px;
+                                            text-align: center;
+                                            height: 36px;
+                                            margin-bottom: 0;
+                                            width: 220px;
+                                            overflow: hidden;
+                                            text-align: justify;
+
+                                        }
+
+
+                                    }
+
+                                    .shopping-price3 {
+                                        width: 120px;
+                                        height: 42px;
+                                        background-color: cornsilk;
+                                        float: left;
+                                        margin-left: 5px;
+                                        margin-top: 5px;
+
+                                        .new_price3 {
+                                            font-size: 20px;
+                                            color: black;
+                                        }
+
+                                        .old_price3 {
+                                            font-size: 14px;
+                                            color: #ccc;
+                                            text-decoration: line-through;
+                                        }
+
+                                    }
+
+                                    button {
+                                        width: 60px;
+                                        height: 40px;
+                                        background-color: rgb(255, 153, 51);
+                                        outline: none;
+                                        border: none;
+                                        float: left;
+                                        margin-left: 38px;
+                                        margin-top: 5px;
+
+                                        i {
+                                            color: whitesmoke;
+                                            font-size: 25px;
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+                            li:nth-child(1) {
+                                border-left: none;
+                            }
+
+                            li:nth-child(6) {
+                                border-left: none;
+                            }
+
+                        }
+
+                    }
+
+                    .shopping-pre3 {
+                        width: 36px;
+                        height: 72px;
+                        display: block;
+                        position: absolute;
+                        text-align: center;
+                        top: 100px;
+                        background: #777;
+                        opacity: 0.6;
+                        left: 0;
+                        font-size: 50px;
+                    }
+
+                    .shopping-next3 {
+                        width: 36px;
+                        height: 72px;
+                        display: block;
+                        position: absolute;
+                        text-align: center;
+                        top: 100px;
+                        background: #777;
+                        opacity: 0.6;
+                        right: 0;
+                        font-size: 50px;
+
+                    }
+                }
+            }
+        }
+
+        }
+
+         // 上面四块商品内容，end
+       
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.an {
+    width: 50px;
+    height: 50px;
+    background: rgb(29, 111, 184);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+    line-height: 50px;
+    text-align: center;
+    
+}

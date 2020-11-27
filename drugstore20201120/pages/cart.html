@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../lib/node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="bigbox">
+        <!-- 顶部 Start-->
+        <div class="HeaderTopContainer">
+            <div class="main">
+                <!-- 国旗 -->
+                <div class="top">
+                    <div class="header-left">
+                        <a href="#">
+                            <img src="https://po-assets.azoyacdn.com/skin/frontend/PlumTree/po_pc_v2/images/flag.png"
+                                alt="">
+                            <span>English Site</span>
+                        </a>
+                    </div>
+                    <!-- 咨询 -->
+                    <div class="consultative">
+                        <p>客服咨询</p>
+                        <ul>
+                            <li>
+                                <i class="iconfont">&#xe65c;</i>
+                                <span>客服邮箱</span>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe600;</i>
+                                <span>在线客服</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 头部右侧 -->
+                    <div class="header-right">
+                        <a href="./login.html" class="login">登录</a>
+                        <a href="./zhuce.html" class="regsteir">注册</a>
+                        <span>|</span>
+                        <a href="#" class="my-order">我的订单</a>
+                        <a href="#" class="personal">个人中心</a>
+                        <a href="#" class="favour">我的收藏夹</a>
+                        <a href="#" class="focusus">
+                            关注我们
+                            <div class="about">
+                                <div class="about-left">
+                                    <img src="https://po-assets.azoyacdn.com/skin/frontend/PlumTree/po_pc_v2/images/logo/wxcode.png"
+                                        alt="">
+                                    <p>关注PO微信</p>
+                                </div>
+                                <div class="about-right">
+                                    <img src="https://po-assets.azoyacdn.com/skin/frontend/PlumTree/po_pc_v2/images/logo/wbo.png"
+                                        alt="">
+                                    <p>关注PO微博</p>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="#">帮助</a>
+                        <a href="#">消费者告知书</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部 end--->
+        <!-- 版心Start -->
+        <div class="main">
+            <!-- 物流进度Start -->
+            <div class="schedule">
+                <div class="cart-logo-left">
+                    <a href="#"><img src="https://staticfile.azoyacdn.com/promotion/po/pc/images/logo_36626a0be9.png"
+                            alt=""></a>
+                    <a href="#"><img
+                            src="https://staticfile.azoyacdn.com/promotion/po/pc/images/slogan-new_52d528fae2.png"
+                            alt=""></a>
+                </div>
+
+                <div class="cart-step-right">
+
+                </div>
+
+            </div>
+            <!-- 物流进度Start -->
+
+            <!-- 购物车标题栏 Star -->
+            <div class="cart-title">
+                <div class="cart-info">商品</div>
+                <div class="cart-weight">重量</div>
+                <div class="cart-price">单价</div>
+                <div class="cart-quantity">数量</div>
+                <div class="cart-subtotal">小计</div>
+                <div class="cart-operation">操作</div>
+            </div>
+            <!-- 购物车标题栏 end -->
+
+            <!-- 购物车主体部分 Star -->
+            <div class="cart-body">
+                <!-- 头 top-->
+                <div class="cart-header">
+                    <input type="checkbox" name="selectAll" id="" class="cart-checkbox">
+                    <span class="country">澳洲仓 </span>
+                    <span class="Mailing-method">澳洲直邮</span>
+                </div>
+                <!-- 头 end-->
+
+                <!-- 商品展示 top -->
+                <div class="cart-product-row">
+                    <ul>
+                        <!-- <li>
+                               <input type="checkbox" name="" id="">
+                                 <div class="product-info">
+                                     <a href="#"><img src="https://po-assets.azoyacdn.com/media/catalog/product/2/6/26652_eaoron_instant_whitening_2_1.jpg?imageMogr2/thumbnail/70x70/extent/70x70/background/d2hpdGU=" alt=""></a>
+                                      <span>Eaoron 水光美白面膜 25ml*5片/盒——新旧包装随机发货</span> 
+                                 </div> -->
+                        <!-- 重量 -->
+                        <!-- <div class="weight">
+                                     <span>45g</span>
+                                 </div> -->
+                        <!-- 价格 -->
+                        <!-- <div  class="price">
+                                     <p>AU$<span>29.00</span></p>
+                                     <p>AU$<span>14.95</span></p>
+                                 </div> -->
+                        <!-- 数量 -->
+                        <!-- <div class="quantity">
+                                     <input type="button" value="-" class="sub">
+                                     <input type="text" value="1"  class="txt">
+                                     <input type="button" value="+" class="add">
+                                 </div> -->
+                        <!-- 小计 -->
+                        <!-- <div class="subtotal">
+                                     <p>AU$<span>14.95</span></p>
+                                 </div> -->
+                        <!-- 操作 -->
+                        <!-- <div class="operation">
+                                    <i>删除</i>
+                                 </div> -->
+
+                        <!-- </li> -->
+                    </ul>
+
+                </div>
+                <!-- 商品展示 bottom -->
+
+                <!-- 购物车底部Star -->
+                <div class="cart-foot">
+
+
+                </div>
+                <!-- 购物车底部end -->
+
+
+
+            </div>
+            <!-- 购物车主体部分 end -->
+
+
+
+        </div>
+        <!-- 版心end -->
+
+    </div>
+
+    <script>
+        $(function () {
+            //判断本地存储localStorage 是否有购物车数据
+            if (localStorage.getItem('goods')) {
+                //有数据则获取本地存储购物车的数据
+                var goodsArry = JSON.parse(localStorage.getItem('goods'))
+                // console.log(goodsArry)
+                //ajax获取数据渲染页面
+                $.ajax({
+                    url: "../json/new-shopping.json",
+                    type: "get",
+                    dataType: "json",
+                    success: function (json) {
+                        var domStr = ''
+                        $.each(goodsArry, function (index, item) {//遍历查询本地是否储存了
+                            // console.log(item.id)
+                            //遍历数据库是否有这个值
+                            $.each(json, function (ind, obj) {
+                                if (item.id === JSON.stringify(obj.id)) {
+
+                                    domStr += `
+                                            <li>
+                                                    <input type="checkbox" name="" id="">
+                                                    <div class="product-info">
+                                                        <a href="#"><img src="${obj.imgs}" alt=""></a>
+                                                        <span>${obj.title}</span> 
+                                                    </div>
+                                                    <!-- 重量 -->
+                                                    <div class="weight">
+                                                        <span>45g</span>
+                                                    </div>
+                                                    <!-- 价格 -->
+                                                    <div  class="price">
+                                                        <p>AU$<span>${obj.new_price}</span></p>
+                                                        <p>AU$<span>${obj.old_price}</span></p>
+                                                    </div>
+                                                    <!-- 数量 -->
+                                                    <div class="quantity">
+                                                        <input type="button" value="-" class="sub">
+                                                        <input type="text" value="1"  class="txt">
+                                                        <input type="button" value="+" class="add">
+                                                    </div>
+                                                    <!-- 小计 -->
+                                                    <div class="subtotal">
+                                                        <p>AU$<span>14.95</span></p>
+                                                    </div>
+                                                    <!-- 操作 -->
+                                                    <div class="operation" id="${obj.id}">
+                                                        <i>删除</i>
+                                                    </div>
+
+                                            </li>
+                                        `
+
+                                }
+                            })
+                        })
+
+                        $('.cart-product-row>ul').html(domStr)
+                    }
+                })
+
+                //删除商品移出购物车  写在ajax外  
+                //思路：1、有点击事件
+                //      2、移除父项
+                //      3、把本地存储的也给删除
+
+                $('.cart-product-row>ul').on('click', 'li .operation ', function () {
+                    $(this).parent().remove()
+                    //更新本地存储数据
+                    //获取删除的商品id   
+                    // <div class="operation" id="${obj.id}">
+                    //     <i>删除</i>
+                    // </div> 
+                    // 从上面来
+
+                    var id = $(this).attr('id')
+
+                    //删除数组元素：pop() unshift() splice(index,1)
+                    //因为要用到已经存储在本地的商品id 和点击删除的id做比较，所以要遍历
+                    $.each(goodsArry, function (index, item) {
+                        console.log(item.id === id)
+                        if (item.id === id) {
+                            goodsArry.splice(index, 1)
+                            return false
+                        }
+                    })
+
+                    //判断购物车是否还有数据 
+
+                    if (goodsArry.length > 0) {//如果购物车还有数据
+                        //更新本地数据，即设置localStorage
+                        localStorage.setItem('goods', JSON.stringify(goodsArry))
+
+                    } else {//如果没数据则全部清除，把键名移除
+                        localStorage.removeItem('goods')
+                        var nodata = '<li style="line-height:70px;text-align:center; " class="go">购物车空空如也,快去添加宝贝吧<li>'
+                        $('.cart-product-row>ul').html(nodata)
+                        //点击跳转到商品列表页
+                        $('.cart-product-row>ul').on('click', 'go', function () {
+                            location.href = './index.html'
+                        })
+                    }
+                })
+
+            } else {//如果没有数据则显示无数据的文字
+                var nodata = '<li style="line-height:70px;text-align:center; background-color:#ccc;" class="go" >购物车空空如也,快去添加宝贝吧<li>'
+                    $('.cart-product-row>ul').html(nodata)
+                //点击跳转到商品列表页
+                $('.cart-product-row>ul').on('click', '.go', function () {
+                    location.href = './index.html'
+                })
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,872 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body,
+html {
+    background-color: rgb(244, 244, 244);
+}
+
+@mixin heart {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.bigbox {
+
+    //登录/注册头部
+    .HeaderTopContainer {
+        background-color: rgb(250, 243, 227);
+        height: 30px;
+
+        .main {
+            @include heart;
+
+            .top {
+                width: 1190px;
+                height: 30px;
+
+                .header-left {
+                    width: 135px;
+                    line-height: 30px;
+                    float: left;
+
+                    a {
+                        color: #999;
+                        font-size: 14px;
+                        width: 120px;
+                        line-height: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                    }
+                }
+
+                .consultative {
+                    width: 80px;
+                    height: 14px;
+                    float: left;
+                    border-left: 1px solid #999;
+                    margin-top: 8px;
+                    position: relative;
+                    padding-bottom: 8px;
+
+                    p {
+                        font-size: 12px;
+                        margin-left: 15px;
+                        color: #999;
+                    }
+
+                    ul {
+                        width: 120px;
+                        background-color: aliceblue;
+                        position: absolute;
+                        top: 20px;
+                        display: none;
+                        z-index: 30;
+
+                        li {
+                            width: 100%;
+                            height: 30px;
+
+                        }
+                    }
+
+                    &:hover ul {
+                        display: block;
+                    }
+
+                }
+
+                .header-right {
+                    width: 579px;
+                    height: 30px;
+                    float: right;
+
+                    a {
+                        height: 30px;
+                        color: #ccc;
+                        font-size: 16px;
+                        line-height: 30px;
+                        padding-left: 8px;
+
+                        &:hover {
+                            color: rgb(255, 198, 154);
+                        }
+
+                    }
+
+                    .focusus {
+                        position: relative;
+                        height: 30px;
+                        display: inline-block;
+
+                        .about {
+
+                            position: absolute;
+                            width: 280px;
+                            height: 200px;
+                            background-color: #fff;
+                            //  display: flex;
+                            //  justify-content: space-between;
+                            //  align-items: center;
+                            left: -207px;
+                            display: none;
+                            z-index: 30;
+
+                            .about-left {
+                                width: 140px;
+                                height: 200px;
+                                //  background-color: palevioletred;
+                                float: left;
+
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                    margin-top: 30px;
+                                    margin-left: 20px;
+                                }
+
+                                p {
+                                    text-align: center;
+                                    color: #999;
+                                }
+                            }
+
+                            .about-right {
+                                width: 140px;
+                                height: 200px;
+                                // background-color: yellow;
+                                float: right;
+
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                    margin-top: 30px;
+                                    margin-left: 20px;
+                                }
+
+                                p {
+                                    text-align: center;
+                                    color: #999;
+                                }
+
+                            }
+                        }
+
+                        &:hover .about {
+                            display: block;
+                        }
+
+                        &:hover {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //  搜索框
+    .HeaderMiddle {
+        background-color: rgb(255, 228, 191);
+        height: 116px;
+        // overflow: hidden;
+
+        .main {
+            @include heart;
+
+            a {
+                // display: inline-block;
+                margin-top: 25px;
+                float: left;
+            }
+
+            .HeaderLogoDesc {
+                width: 246px;
+                height: 50px;
+                float: left;
+                border-left: 2px solid #999;
+                padding-left: 30px;
+                margin-top: 35px;
+                margin-left: 20px;
+
+            }
+
+            //  搜索框部分 
+            .search_grid {
+                width: 560px;
+                height: 81px;
+                background-color: aqua;
+                float: left;
+                margin-left: 10px;
+                margin-top: 30px;
+                // overflow: hidden;
+
+                .search_box {
+                    width: 556;
+                    height: 39px;
+                    border: 2px solid rgb(29, 111, 184);
+                    background-color: yellowgreen;
+
+                    div {
+                        width: 30px;
+                        height: 39px;
+                        float: left;
+                        background-color: violet;
+                        text-align: center;
+
+                        i {
+                            font-size: 16px;
+                            line-height: 39px;
+                        }
+                    }
+
+                    input {
+                        width: 400px;
+                        height: 21px;
+                        padding: 9px 0px 9px 5px;
+                        border: 0px;
+                        outline: none;
+                        float: left;
+                    }
+
+                    button {
+                        width: 121px;
+                        height: 39px;
+                        border: 0px;
+                        outline: none;
+                        float: left;
+                        background-color: rgb(29, 111, 184);
+                    }
+                }
+
+                .hot-search {
+
+                    width: 560px;
+                    height: 21px;
+                    background-color: red;
+                    margin-top: 5px;
+
+                    .hot-search-box {
+                        float: left;
+                        width: 560px;
+                        height: 21px;
+
+                        .hot {
+                            color: rgb(240, 212, 174);
+                            border: none;
+                        }
+
+                        div {
+                            float: left;
+                            color: rgb(186, 151, 102);
+                            margin-left: 20px;
+                            border-left: 1px solid rgb(186, 151, 102);
+
+                            p {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cart {
+                display: block;
+                width: 120px;
+                height: 40px;
+                border-radius: 7px;
+                background-color: rgb(29, 111, 184);
+                float: right;
+                margin-top: 30px;
+
+                .cart-img {
+                    float: left;
+                    line-height: 40px;
+                    font-size: 26px;
+                    color: rgb(250, 243, 227);
+                    margin-left: 8px;
+                }
+
+                span {
+                    color: rgb(250, 243, 227);
+                    line-height: 40px;
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    //   导航栏Start
+    .nav {
+        height: 40px;
+        background-color: rgb(29, 111, 184);
+
+        .main {
+            @include heart;
+
+            .new-online {
+                position: relative;
+                height: 40px;
+                width: 880px;
+
+                .new-list {
+                    width: 100%;
+                    height: 100%;
+
+                    li {
+                        width: 80px;
+                        line-height: 40px;
+                        float: left;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            line-height: 40px;
+                            color: whitesmoke;
+                            font-size: 16px;
+                            text-align: center;
+
+                            &:hover {
+                                background-color: rgb(13, 80, 139);
+                            }
+                        }
+                    }
+                }
+
+                //   显示模块
+                .show {
+                    width: 1190px;
+                    min-height: 343px;
+                    background-color: pink;
+                    display: none;
+
+                    .show-left {
+                        width: 880px;
+                        min-height: 343px;
+                        background-color: rgb(186, 151, 102);
+                        float: left;
+
+                        .show-left-title {
+                            width: 880px;
+                            height: 35px;
+                            float: left;
+                            margin-top: 10px;
+
+                            h3 {
+                                margin-left: 20px;
+                                width: 80px;
+                                min-height: 35px;
+                                background-color: aqua;
+                                font-size: 15px;
+                                float: left;
+                                line-height: 35px;
+
+                            }
+
+                            ul {
+                                float: left;
+                                width: 780px;
+                                min-height: 35px;
+
+                                li {
+                                    float: left;
+                                    min-width: 60px;
+                                    line-height: 35px;
+
+                                    a {
+                                        color: black;
+
+                                        &:hover {
+                                            color: rgb(255, 153, 51);
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    // 右边图片
+                    .show-right {
+                        width: 310px;
+                        min-height: 343px;
+                        background-color: azure;
+                        float: left;
+
+                        h3 {
+                            text-align: center;
+                            margin-top: 15px;
+                        }
+
+                        .img-list {
+                            width: 280px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+
+                            li {
+                                float: left;
+                                width: 130px;
+                                height: 50px;
+                                margin-left: 10px;
+                                margin-top: 20px;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    //导航栏end
+
+
+    // 面包屑Start 
+    .Bread-crumbs-box {
+        .main {
+            @include heart;
+
+            .Bread-crumbs {
+                width: 1190px;
+                height: 45px;
+                background-color: blanchedalmond;
+
+                ul {
+                    width: 100%;
+                    height: 100%;
+
+                    li {
+                        line-height: 45px;
+                        float: left;
+                        margin-left: 5px;
+                        color: #999;
+                        font-size: 14px;
+
+                        a {
+                            color: #999;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    // 面包屑end
+
+
+    // 版心Start
+    .main {
+        @include heart;
+
+        // 放大镜盒子Start
+        .magnifier-box {
+            width: 100%;
+            height: 641px;
+            background-color: aqua;
+
+            .magnifier-left {
+                width: 442px;
+                height: 581px;
+                background-color: blueviolet;
+                margin-top: 20px;
+                margin-left: 15px;
+                float: left;
+
+                .showcase {
+                    position: relative;
+                    width: 440px;
+                    height: 440px;
+                    border: 1px solid #7e6262;
+
+                    .datu {
+                        width: 440px;
+                        height: 440px;
+                    }
+
+                    .mark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0.5;
+                        width: 220px;
+                        height: 220px;
+                        background-color: lightblue;
+                        cursor: move;
+                        display: none;
+                    }
+
+                    .show-right {
+                        position: absolute;
+                        overflow: hidden;
+                        top: 0;
+                        left: 470px;
+                        width: 440px;
+                        height: 440px;
+                        border: 1px solid #f5f5f5;
+                        display: none;
+
+                        img {
+                            width: 880px;
+                            height: 880px;
+                            position: absolute;
+                        }
+                    }
+
+                    .Small-picture {
+                        img {
+                            margin: 0 3px;
+                            width: 60px;
+                            height: 60px;
+                            border: 2px solid #FFF;
+                        }
+                    }
+                }
+
+            }
+
+            .magnifier-right {
+                width: 660px;
+                height: 470px;
+                background-color: burlywood;
+                margin-top: 20px;
+                float: right;
+                margin-right: 15px;
+                .Brand{
+                    display: block;
+                    float: right;
+                    width: 96px;
+                    img{
+                        width: 100%;
+                        height: 48px;
+                    }
+                    
+                }
+                .Brand-title{
+                  line-height: 27px;
+                  font-size: 18px;
+                  margin-bottom: 8px;
+                  color: #333;
+                }
+                .empty{
+                    width: 660px;
+                    line-height: 20px;
+                }
+                .price-information{
+                    width: 660px;
+                    height: 83px;
+                    background-color: antiquewhite;
+                    
+                    .Sale-price{
+                        width: 660px;
+                        height: 29px;
+                        // background-color:palegreen;
+                        float: left;
+                        margin-top: 10px;
+                        .Promotion{
+                             width: 59px;
+                             height: 29px;
+                            //  background-color: pink;
+                             line-height: 29px;
+                             margin-left: -5px;
+                             text-align: center;
+                             float: left;
+                             color: #ccc;
+                             font-size: 12px;
+
+                        }
+                        .Promotion-content{
+                            width: 578px;
+                            height: 29px;
+                            // background-color: mediumvioletred;
+                            float: right;
+                            b{
+                                display: block;
+                                color: rgb(255, 153, 51);
+                               font-size: 20px;
+                                line-height: 29px;
+                                float: left;
+
+                            }
+                            .discount{
+                                display: block;
+                                width: 49px;
+                                height: 29px;
+                                background-color: rgb(255, 153, 51);
+                                float: left;
+                                text-align: center;
+                                line-height: 29px;
+                                margin-left: 8px;
+                                font-size: 12px;
+                            }
+                            .proposed-price{
+                                display: block;
+                                width: 96px;
+                                height: 16px;
+                                // background-color: rgb(255, 228, 191);
+                                margin-top: 13px;
+                                margin-left: 20px;
+                                font-size: 12px;
+                                color: #ccc;
+                                float: left;
+                            }
+                           
+                        }
+
+                        
+                    }
+                    .Original-price{
+                        width: 660px;
+                        height: 26px;
+                        // background-color: #fff;
+                        float: left;
+                        margin-top: 10px;
+                        .old{
+                            width: 60px;
+                            height: 26px;
+                            // background-color: aquamarine;
+                            float: left;
+                            margin-left: 9px;
+                            line-height: 26px;
+                            color: #ccc;
+                            font-size: 12px;
+                        }
+                        .old-price{
+                            span{
+                                width: 110px;
+                                height: 26px;
+                                // background-color: blueviolet;
+                                line-height: 26px;
+                                float: left;
+                                margin-left: -13px;
+                                text-align: center;
+                                color: #ccc;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+
+                }
+                .custommot-proion{
+                    width: 660px;
+                    height: 104px;
+                    background-color: yellow;
+                    margin-top: 5px;
+                    .hd{
+                        width:58px;
+                        height: 104px;
+                        background-color: pink;
+                        float: left;
+                        p{
+                            letter-spacing: 12px;
+                            margin-left: 10px;
+                            font-size: 12px;
+                            color: #ccc;
+                            margin-top: 5px;
+                        }
+                    }
+                    .hd-content{
+                        width: 602px;
+                        height: 104px;
+                        background-color: #fff;
+                        float: left;
+                        p{
+                            
+                            font-size: 12px;
+                            line-height: 25px;
+                            
+                            a{
+                                display: inline-block;
+                                margin-left: 5px;
+                                color: #ccc;
+                            }
+
+                        }
+                    }
+                }
+                .Taxes{
+                    width: 660px;
+                    height: 26px;
+                    background-color: orangered;
+                    .sf{
+                        width: 58px;
+                        height: 26px;
+                        line-height: 26px;
+                        background-color: palegreen;
+                        float: left;
+                        p{
+                            font-size: 12px;
+                            color: #ccc;
+                            margin-left: 10px;
+                            letter-spacing: 12px;
+                        }
+                        
+                    }
+                    .sf-content{
+                        width: 602px;
+                        height: 26px;
+                        background-color: #fff;
+                        float: left;
+                        p{
+                            line-height: 26px;
+                            font-size: 12px;
+                        }
+                    }
+
+                   
+                }
+                .Ship{
+                    width: 660px;
+                    height: 26px;
+                    background-color: orangered;
+                    .fh{
+                        width: 58px;
+                        height: 26px;
+                        line-height: 26px;
+                        background-color: palegreen;
+                        float: left;
+                        p{
+                            font-size: 12px;
+                            color: #ccc;
+                            margin-left: 10px;
+                            letter-spacing: 12px; 
+                        }
+                    }
+                    .fh-content{
+                        width: 602px;
+                        height: 26px;
+                        background-color: #fff;
+                        float: left;
+                        p{
+                            line-height: 26px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .Quantity{
+                    width: 660px;
+                    height: 26px;
+                    background-color: orangered;
+                    .sl{
+                        width: 58px;
+                        height: 26px;
+                        line-height: 26px;
+                        background-color: palegreen;
+                        float: left;
+                        p{
+                            font-size: 12px;
+                            color: #ccc;
+                            margin-left: 10px;
+                            letter-spacing: 12px; 
+                        }
+                    }
+                    .sl-content{
+                        width: 602px;
+                        height: 26px;
+                        background-color: lawngreen;
+                        float: left;
+                        .sub{
+                            width: 26px;
+                            height: 26px;
+                            float: left;
+                            margin-left: 30px;
+                        }
+                        .txt{
+                            width: 50px;
+                            height: 22px;
+                            text-align: center;
+                            float: left;
+                        }
+                        .add{
+                            width: 26px;
+                            height: 26px;
+                            float: left;
+                        }
+                        span{
+                            float: left;
+                            margin-left: 20px;
+                            font-size: 12px;
+                            line-height: 26px;
+                        }
+                    }
+
+                }
+                .Shopping-Cart{
+                    width: 660px;
+                    height: 44px;
+                    background-color: lightgreen;
+                    margin-top: 35px;
+                    .Cart{
+                        width: 168px;
+                        height: 44px;
+                        background-color: rgb(255, 153, 51);
+                        color: whitesmoke;
+                        text-align: center;
+                        line-height: 44px;
+                        margin-left: 10px;
+                        font-size: 20px;
+                        border-radius: 6px;
+                        float: left;
+                        &:hover{
+                            background-color: rgb(239,136,33);
+                        }
+                    }
+                    .collect {
+                        width: 168px;
+                        height: 44px;
+                        border: 1px solid #999;
+                        background-color: #f5f5f5;
+                        font-size: 20px;
+                        color: #000;
+                        text-align: center;
+                        border-radius: 6px;
+                        margin-left: 30px;
+                        line-height: 44px;
+                        float: left;
+
+
+                    }
+                }
+
+            }
+
+        }
+
+        // 放大镜盒子end
+
+        // 相关推荐 Star
+        .related{
+            width: 1190px;
+            height: 58px;
+            background-color: rgb(255, 228, 191);
+            margin-top: 30PX;
+            p{
+                float: left;
+                font-size: 16px;
+                line-height: 58px;
+                font-weight: 900;
+                margin-left: 10px;
+                
+            }
+        }
+        // 相关推荐 end
+       
+
+
+    }
+    // 版心end
+
+
+}

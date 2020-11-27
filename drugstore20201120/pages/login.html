@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../lib/font_2218841_aakpu43li9i/iconfont.css">
+</head>
+
+<body>
+    <!-- 总框 -->
+    <div class="bigbox">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="main">
+                <img class="logo"
+                    src="https://po-assets.azoyacdn.com/skin/frontend/PlumTree/po_pc_v2/images/logo/logo.png" alt="">
+
+                <ul>
+                    <li>
+                        <i><img src="../imgs/1.png" alt=""></i>
+                        <span>澳洲直邮</span>
+                    </li>
+                    <li>
+                        <i><img src="../imgs/2.png" alt=""></i>
+                        <span>便捷支付</span>
+                    </li>
+                    <li>
+                        <i><img src="../imgs/3.png" alt=""></i>
+                        <span> 中文客服</span>
+                    </li>
+                    <li>
+                        <i><img src="../imgs/4.png" alt=""></i>
+                        <span>正品保证</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- 登录框盒子 -->
+        <div class="login-box">
+            <div class="main">
+                <div class="connet">
+                    <div class="login-left">
+                        <a href="./index.html">
+                            <img src="https://img-resource.azoyacdn.com/media/dacbd5ac99a8d4c1dfe3e092f8840002/82022/b891400e18b0bca876d14ac2992e1768.jpg"
+                                alt="">
+                        </a>
+                    </div>
+
+                    <div class="login-right">
+                        <div class="login">
+                            <!-- 登录头部    -->
+                            <div class="login-right-header">
+                                <h3>用户登录</h3>
+                                <a href="./zhuce.html">立即注册</a>
+                            </div>
+                            <!-- 账号登录 -->
+                            <div class="mailbox">
+                                <p>
+                                    <i class="iconfont">&#xe600;</i>
+                                    <input type="text" class="user" placeholder="手机号/邮箱">
+                                    <span>x1</span>
+                                </p>
+                                <p></p>
+                            </div>
+                            <!-- 密码 -->
+                            <div class="passbox">
+                                <p>
+                                    <i class="iconfont">&#xe661;</i>
+                                    <input type="text" class="pass" placeholder="密码">
+                                    <span>x2</span>
+                                </p>
+                                <p></p>
+                            </div>
+                            <!-- 忘记密码  -->
+                            <div class="forget-password">
+                                <p><a href="#">忘记密码？</a> </p>
+                            </div>
+                            <!-- 登录         -->
+                            <div class="denglu">
+                                <p><button class="btn">登录</button></p>
+                            </div>
+
+                            <!-- 登录方式 -->
+                            <div class="login-method">
+                                <p>快捷登录方式</p>
+                                <ul>
+                                    <li><a
+                                            href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=101306098&redirect_uri=http%3A%2F%2Fcn.pharmacyonline.com.au%2Funion%2Flogin%2Fcallback&response_type=code&scope=get_user_info&state=qq"><img
+                                                src="http://basedata.azoyacdn.com/uploads/basedata/images/fd598b23364e95f373757e068801e2b0.png"
+                                                alt=""></a></li>
+                                    <li><a
+                                            href="https://api.weibo.com/oauth2/authorize?client_id=2358281811&redirect_uri=https%3A%2F%2Fcn.pharmacyonline.com.au%2Funion%2Flogin%2Fcallback&response_type=code&scope=&state=sina###"><img
+                                                src="http://basedata.azoyacdn.com/uploads/basedata/images/a8f8396a2af7a07555247dbd906d1a68.png"
+                                                alt=""></a></li>
+                                    <li><a
+                                            href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D043c6d935b2009c3e188dc65e787fd54"><img
+                                                src="http://basedata.azoyacdn.com/uploads/basedata/images/005699ef3bb8ec2bba25e1496c45d65b.png"
+                                                alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="main">
+                <p>
+                    © Pharmacy Online
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script>
+        var user = document.querySelector('.user')
+        var pass = document.querySelector('.pass')
+        var span1 = document.querySelector('.mailbox>p>span')
+        var span2 = document.querySelector('.passbox>p>span')
+        var p1 = document.querySelector('.mailbox>p:nth-of-type(2)')
+        var p2 = document.querySelector('.passbox>p:nth-of-type(2)')
+        var login = document.querySelector('.btn')
+        console.log(p2)
+
+
+
+        //登录
+        login.onclick = function () {
+
+            //获取输入框的值
+            var $u = user.value;
+            var $p = pass.value;
+            // console.log($u)
+            //验证表单是否为空  这里可添加正则验证
+            if (!$u || !$p) {
+                // alert('账号或密码不能为空')
+                p1.style.display = 'block'
+                p2.style.display = 'block'
+                p1.innerHTML = '请输入账号'
+                p2.innerHTML = '请输入登录密码'
+                // return
+            }
+            //ajax获取数据
+            ajax({
+                url: "../php/users.php",
+                type: "post",
+                data: {
+                    user: $u,
+                    pass: $p,
+                    type: 'login',
+                },
+                dataType: "json",
+                success: function (json) {
+                    alert(json.msg)
+                    if (json.msg == '登录成功') {
+                        location.href = './index.html'
+                    } else {
+                        alert('账号或密码错误')
+                    }
+
+                },
+            })
+
+        }
+
+
+        //获得焦点事件
+        //    user.onfocus = function () {
+        //         p1.style.display = 'none'
+        //         if (!$p) {
+        //             p2.style.display = 'block'
+        //         }else{
+        //             p2.style.display = 'none'
+        //         }
+        //     }
+        //     pass.onfocus = function () {
+        //         var $u = user.value;
+        //         var $p = pass.value;
+        //         p2.style.display = 'none'
+        //         if (!$p) {
+        //             p1.style.display = 'block'
+        //         }else{
+        //             p1.style.display = 'none'
+        //         }
+        //     }
+
+        // //输入框失去焦点
+        // user.onblur = function () {
+
+
+        // }
+
+        //清除账户的输入
+        span1.onclick = function () {
+            user.value = ""
+        }
+
+        span2.onclick = function () {
+            pass.value = ''
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

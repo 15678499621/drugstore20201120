@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/zhuce.css">
+</head>
+<body>
+    <div class="bigbox">
+             <!-- 头部  -->
+             <div class="header">
+                <div class="main">
+                    <img class="logo"
+                        src="https://po-assets.azoyacdn.com/skin/frontend/PlumTree/po_pc_v2/images/logo/logo.png" alt="">
+    
+                    <ul>
+                        <li>
+                            <i><img src="../imgs/1.png" alt=""></i>
+                            <span>澳洲直邮</span>
+                        </li>
+                        <li>
+                            <i><img src="../imgs/2.png" alt=""></i>
+                            <span>便捷支付</span>
+                        </li>
+                        <li>
+                            <i><img src="../imgs/3.png" alt=""></i>
+                            <span> 中文客服</span>
+                        </li>
+                        <li>
+                            <i><img src="../imgs/4.png" alt=""></i>
+                            <span>正品保证</span>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+     <!-- 版心 -->
+          <div class="main">
+            <!-- 注册大框  top-->
+            <div class="registered-box">
+                <!-- 注册头部top -->
+                <div class="registered-top">
+                    <h3>
+                        <span class="welcome">欢迎注册</span>
+                        <span class="already">我已注册，现在就<a href="./login.html">登录></a></span>
+                    </h3>
+                </div>
+
+                <div class="registered-bottom">
+                    <div class="registered-bottom-mid">
+                    <!-- 手机号码 Star -->
+                    <div class="phone-box" >
+                      <p><i>手机号码</i> <input type="text" name="user" class="user" placeholder="请填写常用手机"></p>  
+                      <p>不能为空</p> 
+                    </div>
+                    <!-- 手机号码 end -->
+                    <!-- 图形验证码 Star -->
+                    <div class="Captcha">
+                     <p>
+                         <i> 图形验证码</i>
+                         <input type="text"  name="yzm" class="yzm" placeholder="请输入图形验证码">
+                         <span>5698</span>
+                         <b>看不清？点击图片更换验证码</b>
+                        </p>  
+                     <p>不能为空</p> 
+                    </div>
+                    <!-- 图形验证码 end -->
+
+                    <!-- 手机验证码Star -->
+                    <div class="phone-code">
+                        <div class="phone-code-left">
+                            <p><i>手机验证码</i><input type="text" name="code" class="code" placeholder="请输入手机验证码"></p> 
+                            <p>不能为空</p>
+                        </div>
+                        <div class="phone-code-right">
+                           <span>获取验证码</span>
+                        </div>
+                       
+                    </div>
+                    <!-- 手机验证码end -->
+
+                    <!-- 登录密码Star -->
+                    <div class="login-code">
+                           <p><i> 登录密码</i><input type="password" name="pass" class="pass" placeholder="6-20位字符、由数字和字母组合" ></p>
+                           <p>不能为空</p> 
+                    </div>
+                    <!-- 登录密码end -->
+                    <!-- 确认密码 Star -->
+                    <div class="confirm-password">
+                      <p><i>确认密码</i><input type="password" class="qr" name="qr" placeholder="请输入确认密码"></p>  
+                      <p>不能为空</p> 
+                    </div>
+                    <!-- 确认密码 end -->
+                
+                </div>
+                 
+                <!-- 服务条款Star -->
+                <div class="service">
+                    <input type="checkbox" name="tong" id="tong">
+                    <p>
+                        <i>是的，我已阅读并同意</i>
+                        <a href="#">《服务条款》</a>
+                        及
+                        <a href="#">《隐私条款》</a>         
+                    </p>
+
+                </div>
+                 <!-- 服务条款end-->
+
+                 <!-- 登录Star  -->
+                 <button type="submit" class="registered-btn" disabled>立即注册</button>
+                  <!-- 登录end -->
+
+                </div>
+
+            </div>
+
+            <!-- 注册大框  end-->
+           </div>
+           <!-- 版心end -->
+    </div>
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/utils.js"></script>
+    <script>
+
+        //判断是否勾选
+     
+        var  checkbox1 = document.querySelector('[type="checkbox"]');
+        var   btn = document.querySelector('.registered-btn')
+
+        //  console.log(checkbox1)
+        checkbox1.onclick=function(){
+            // console.log(this.checked)
+            if(this.checked){
+                  btn.disabled = false
+            }else{
+                btn.disabled=true
+            }
+        }
+
+
+        var phone = document.querySelector('.user') 
+        var pass = document.querySelector('.qr') 
+        // console.log(phone)
+        // console.log(pass)
+        btn.onclick = function(){
+            //获取输入框的值
+            var $p=pass.value;
+            var $ph=phone.value;
+            //验证表单是否为空
+            if(!$p ||!$ph){
+               alert('账号或密码不能为空')
+                return
+            }
+
+         //ajax({})已封装好的在utils.js中    提交数据
+
+         ajax({
+                url:"../php/users.php",
+
+                type:'post',
+                data:{
+                    pass:$p, 
+                    phone:$ph, 
+                    type:'add',
+                },
+                dataType:'json',
+                success:function(json){
+                      alert(json.msg)
+                      pass.value = ""
+                      phone.value = ""
+
+                },
+                error:function(code){
+                     alert(code)
+                }
+            }) 
+
+
+        }
+
+         
+          
+        
+
+        
+
+        // //立即注册 按钮
+        // $('.registered-btn').click(function(){
+        //     console.log(1111)
+        // })
+        
+    </script>
+</body>
+</html>

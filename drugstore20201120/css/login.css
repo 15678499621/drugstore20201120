@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+.bigbox {
+  background-color: #fff;
+}
+.bigbox .header {
+  background-color: #fff;
+  height: 80px;
+  overflow: hidden;
+}
+.bigbox .header .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .header .main .logo {
+  width: 104px;
+  height: 54px;
+  float: left;
+  margin-top: 8px;
+}
+.bigbox .header .main ul {
+  width: 526px;
+  line-height: 80px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bigbox .header .main ul li {
+  width: 101px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bigbox .header .main ul li img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+}
+.bigbox .header .main ul li span {
+  font-size: 16px;
+  line-height: 80px;
+}
+.bigbox .login-box {
+  background-color: #f4c249;
+  height: 588px;
+}
+.bigbox .login-box .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .login-box .main .connet {
+  width: 990px;
+  height: 546px;
+  margin: 0 auto;
+}
+.bigbox .login-box .main .connet .login-left {
+  width: 580px;
+  height: 466px;
+  float: left;
+}
+.bigbox .login-box .main .connet .login-left img {
+  width: 580px;
+  height: 399px;
+  margin-top: 60px;
+}
+.bigbox .login-box .main .connet .login-right {
+  width: 380px;
+  height: 404px;
+  float: right;
+  margin-top: 60px;
+}
+.bigbox .login-box .main .connet .login-right .login {
+  width: 380px;
+  height: 404px;
+  background-color: #fff;
+}
+.bigbox .login-box .main .connet .login-right .login .login-right-header {
+  width: 320px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  padding-top: 40px;
+}
+.bigbox .login-box .main .connet .login-right .login .mailbox {
+  width: 320px;
+  height: 60px;
+  margin-left: 40px;
+  margin-top: 24px;
+}
+.bigbox .login-box .main .connet .login-right .login .mailbox p:nth-of-type(1) {
+  width: 318px;
+  height: 36px;
+  border: 1px solid #000;
+}
+.bigbox .login-box .main .connet .login-right .login .mailbox p:nth-of-type(1) i {
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  float: left;
+}
+.bigbox .login-box .main .connet .login-right .login .mailbox p:nth-of-type(1) input {
+  border: 0px;
+  width: 263px;
+  height: 36px;
+  float: left;
+  padding-left: 10px;
+}
+.bigbox .login-box .main .connet .login-right .login .mailbox p:nth-of-type(1) span {
+  width: 20px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.bigbox .login-box .main .connet .login-right .login .mailbox p:nth-of-type(2) {
+  color: red;
+  display: none;
+}
+.bigbox .login-box .main .connet .login-right .login .passbox {
+  width: 320px;
+  height: 60px;
+  margin-left: 40px;
+}
+.bigbox .login-box .main .connet .login-right .login .passbox p:nth-of-type(1) {
+  width: 318px;
+  height: 36px;
+  border: 1px solid #000;
+}
+.bigbox .login-box .main .connet .login-right .login .passbox p:nth-of-type(1) i {
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  float: left;
+}
+.bigbox .login-box .main .connet .login-right .login .passbox p:nth-of-type(1) input {
+  border: 0px;
+  width: 263px;
+  height: 36px;
+  float: left;
+  padding-left: 10px;
+}
+.bigbox .login-box .main .connet .login-right .login .passbox p:nth-of-type(1) span {
+  width: 20px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.bigbox .login-box .main .connet .login-right .login .passbox p:nth-of-type(2) {
+  color: red;
+  display: none;
+}
+.bigbox .login-box .main .connet .login-right .login .forget-password {
+  width: 320px;
+  height: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.bigbox .login-box .main .connet .login-right .login .forget-password p {
+  float: right;
+  font-size: 16px;
+}
+.bigbox .login-box .main .connet .login-right .login .forget-password p a {
+  color: #ccc;
+}
+.bigbox .login-box .main .connet .login-right .login .denglu {
+  width: 320px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 25px;
+}
+.bigbox .login-box .main .connet .login-right .login .denglu p {
+  width: 100%;
+  height: 100%;
+}
+.bigbox .login-box .main .connet .login-right .login .denglu p button {
+  width: 100%;
+  height: 100%;
+  background: #ff9933;
+  border: 0px;
+}
+.bigbox .login-box .main .connet .login-right .login .login-method {
+  width: 200px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 24px;
+}
+.bigbox .login-box .main .connet .login-right .login .login-method p {
+  color: #ccc;
+  font-size: 12px;
+}
+.bigbox .login-box .main .connet .login-right .login .login-method ul {
+  width: 102px;
+  height: 24px;
+}
+.bigbox .login-box .main .connet .login-right .login .login-method ul li {
+  float: left;
+  padding-left: 8px;
+}
+.bigbox .login-box .main .connet .login-right .login .login-method ul li img {
+  width: 24px;
+  height: 24px;
+}
+.bigbox .footer {
+  background-color: #fff;
+  height: 100px;
+}
+.bigbox .footer .main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.bigbox .footer .main p {
+  text-align: center;
+  line-height: 150px;
+}
+
+/*# sourceMappingURL=login.css.map */
